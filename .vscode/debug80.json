@@ -5,11 +5,12 @@
       "asm": "src/serial.asm",
       "sourceFile": "src/serial.asm",
       "sourceRoots": [
-        "src"
+        "src",
+        "../debug80/roms/tec1/mon-2"
       ],
       "outputDir": "build",
       "artifactBase": "serial",
-      "platform": "tec1g",
+      "platform": "tec1",
       "tec1": {
         "regions": [
           {
@@ -26,21 +27,23 @@
         "appStart": 2304,
         "entry": 0,
         "romId": "mon-2",
-        "romHex": "../roms/tec1/mon-2/mon-2.hex",
+        "romHex": "../debug80/roms/tec1/mon-2/mon-2.hex",
         "extraListings": [
-          "../roms/tec1/mon-2/mon-2.lst"
+          "../debug80/roms/tec1/mon-2/mon-2.lst"
         ]
-      }
+      },
+      "stopOnEntry": true
     },
     "matrix": {
       "asm": "src/matrix.asm",
       "sourceFile": "src/matrix.asm",
       "sourceRoots": [
-        "src"
+        "src",
+        "../debug80/roms/tec1/mon-2"
       ],
       "outputDir": "build",
       "artifactBase": "matrix",
-      "platform": "tec1g",
+      "platform": "tec1",
       "tec1": {
         "regions": [
           {
@@ -57,12 +60,12 @@
         "appStart": 2304,
         "entry": 0,
         "romId": "mon-2",
-        "romHex": "../roms/tec1/mon-2/mon-2.hex",
+        "romHex": "../debug80/roms/tec1/mon-2/mon-2.hex",
         "extraListings": [
-          "../roms/tec1/mon-2/mon-2.lst"
+          "../debug80/roms/tec1/mon-2/mon-2.lst"
         ]
       }
     }
   },
-  "projectPlatform": "tec1g"
+  "projectPlatform": "tec1"
 }
