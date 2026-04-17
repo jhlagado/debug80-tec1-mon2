@@ -6,7 +6,7 @@
       "sourceFile": "src/serial.asm",
       "sourceRoots": [
         "src",
-        "../debug80/roms/tec1/mon-2"
+        "roms/tec1/mon-2"
       ],
       "outputDir": "build",
       "artifactBase": "serial",
@@ -27,19 +27,20 @@
         "appStart": 2304,
         "entry": 0,
         "romId": "mon-2",
-        "romHex": "../debug80/roms/tec1/mon-2/mon-2.hex",
+        "romHex": "roms/tec1/mon-2/mon-2.hex",
         "extraListings": [
-          "../debug80/roms/tec1/mon-2/mon-2.lst"
+          "roms/tec1/mon-2/mon-2.lst"
         ]
       },
-      "stopOnEntry": true
+      "stopOnEntry": true,
+      "profile": "mon2"
     },
     "matrix": {
       "asm": "src/matrix.asm",
       "sourceFile": "src/matrix.asm",
       "sourceRoots": [
         "src",
-        "../debug80/roms/tec1/mon-2"
+        "roms/tec1/mon-2"
       ],
       "outputDir": "build",
       "artifactBase": "matrix",
@@ -60,12 +61,21 @@
         "appStart": 2304,
         "entry": 0,
         "romId": "mon-2",
-        "romHex": "../debug80/roms/tec1/mon-2/mon-2.hex",
+        "romHex": "roms/tec1/mon-2/mon-2.hex",
         "extraListings": [
-          "../debug80/roms/tec1/mon-2/mon-2.lst"
+          "roms/tec1/mon-2/mon-2.lst"
         ]
-      }
+      },
+      "profile": "mon2"
     }
   },
-  "projectPlatform": "tec1"
+  "projectPlatform": "tec1",
+  "projectVersion": 2,
+  "defaultProfile": "mon2",
+  "profiles": {
+    "mon2": {
+      "platform": "tec1",
+      "description": "MON-2 monitor profile"
+    }
+  }
 }
